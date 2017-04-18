@@ -12,6 +12,25 @@ function changeHeadlines() {
   return $('h1').text('New headline');
   return $('h2').text('A Wikipedia article');
 }
+function logHeadlines() {
+  console.log($('h1').text());
+  console.log($('h2').text());
+}
+function swpHeadlines() {
+  $('h1').text($('h2').text('Lorem ipsum'));
+  $('h2').text($('h1').text('From Wikipedia, the free encyclopedia'));
+  return $('h1').text($('h2').text('Lorem ipsum'));
+  return $('h2').text($('h1').text('From Wikipedia, the free encyclopedia'));
+}
+function swapHeadlines() {
+  var h1 = $('h1').text();
+  var h2 = $('h2').text();
+
+  $('h1').text(h2);
+  $('h2').text(h1);
+  return   $('h1').text(h2);
+  return  $('h2').text(h1);
+}
 </script>
 <head>
   <title>jQuery test page</title>
