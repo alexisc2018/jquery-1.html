@@ -32,7 +32,20 @@ function undo() {
   $('h2').show();
   $('h3').show();
 }
+function highlightByLine() {
+  $('.byline').addClass('byline-color');
+  return $('.byline').addClass('byline-color');
+}
+function unHighlightByLine() {
+  $('.byline').removeClass('byline-color');
+  return $('.byline').removeClass('byline-color');
+}
 </script>
+<style>
+.byline-color {
+  background: yellow;
+}
+</style>
 <head>
   <title>jQuery test page</title>
 </head>
